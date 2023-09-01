@@ -3,9 +3,9 @@
 document.querySelector('#frmTemperature').addEventListener('submit', (e) => {
     e.preventDefault();
 
-    const temperature = parseFloat(document.querySelector('#txtTemperature').value);
-    const from = document.querySelector('#lstFrom').value;
-    const to = document.querySelector('#lstTo').value;
+    const temperature = parseFloat(e.target.txtTemperature.value);
+    const from = e.target.lstFrom.value;
+    const to = e.target.lstTo.value;
     let conversion = '';
     
     switch (from + to) {
