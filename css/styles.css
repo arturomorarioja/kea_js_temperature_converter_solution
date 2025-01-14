@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400&display=swap");
-
 :root {
     --colorTextSecondary: floralwhite;
 
@@ -11,6 +10,8 @@
 
 * {
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
@@ -42,17 +43,20 @@ footer {
     display: block;
 }
 
-input[type=number] {
-    text-align: right;
-}
-
-input[type=submit] {
-    margin-top: 0.5rem;
-    padding: 0.5rem 0.5rem;
-    border-radius: 0.25rem;
-    font-family: var(--fontMain);
-    font-size: 1.2rem;    
-    color: var(--colorPrimary);
+input {
+    &[type=number] {
+        text-align: right;
+    }
+    
+    &[type=submit] {
+        margin-top: 0.5rem;
+        padding: 0.5rem 0.5rem;
+        border: thin solid var(--colorPrimary);
+        border-radius: 0.25rem;
+        font-family: var(--fontMain);
+        font-size: 1.2rem;    
+        color: var(--colorPrimary);
+    }
 }
 
 span#toText {
@@ -63,7 +67,7 @@ span#toText {
 section#results {
     display: none;
     margin-top: 0.5rem;
-    padding: 0.5rem;
+    padding: 0.5rem 1rem;
     border-radius: 0.5rem;
     background-color: var(--colorSecondary);        
 }

@@ -1,7 +1,5 @@
 # KEA Temperature Converter
-
-## Purpose
-Simple DOM manipulation.
+Simple DOM manipulation example.
 
 ## Tools
 JavaScript / CSS3 / HTML5
