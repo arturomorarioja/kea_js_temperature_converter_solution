@@ -1,4 +1,4 @@
-# KEA Temperature Converter
+# Temperature Converter
 Simple DOM manipulation example.
 
 ## Tools
